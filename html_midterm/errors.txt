@@ -1,0 +1,22 @@
+Group: Tuff Contenders
+Names: Winnie Burke, Selma-Jane Yavuz
+
+
+find_error_2.html: 
+Error 1: Doesn't specify language line 2
+Error 2:html tag in wrong order needs to be under doctype tag line 2
+Error 3: Doesn't specify character type line 6
+Error 4: Doesn't specify viewpoint for different screen types line 5
+Error 5: body opening tag missing a > at the end line 9
+Error 6: body tag missing a closing tag line 21
+Error 7: div missing a closing tag line 20
+Error 8: h1 line in the wrong order was in the head should have been in the body line 11
+Error 9: missing a closing p tag line 12
+Error 10: missing a closing strong tag line 12
+Error 11: Needs an alt on the image to describe the image line 14
+Error 12: Wrong naming convention for image file name can't have spaces line 14
+Error 13: incorrect img calling uses href instead of what it should be src line 14
+Error 14: Missing an opening h2 tag line 16
+Error 15: needs opening p tag line 18
+Error 16: Commenting in the incorrect format line 20
+Error 17: html spelled wrong in the closing html tag line 22
