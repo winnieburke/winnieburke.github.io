@@ -1,0 +1,36 @@
+p{
+    color: blue; /*can also use hex colors like color:#12345; */
+    font-family:sans-serif;
+    /* px, em, %, */ 
+    font-size :100%;
+    font-style: italic;
+    font-weight:900;
+}
+
+table{
+    background-color: pink;
+    border-style:solid; 
+    border-color:aliceblue;
+
+}
+
+.Basic{
+    font-style:bold;
+}
+
+#item{
+    border:plum;
+    border-style:dotted;
+}
+
+a:hover{ /* this is a pseudo class! /*/
+    border:#7163ab;
+    border-style: solid;
+    border-color:black
+
+
+}
+
+div:hover{
+    background-color: yellow;
+}
