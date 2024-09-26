@@ -86,7 +86,7 @@ line-height: 1.5em;
     height: 22em;
     margin: 5em auto;
     background-color: paleturquoise;
-    border: 0.2em dotted darkcyan;
+    border: 0.2em solid darkcyan;
     border-radius: 1.5em;
     font-family: 'Courier New', Courier, monospace;
     color:black;
@@ -97,7 +97,7 @@ line-height: 1.5em;
     float: right;
   }
 
-  .myinfo{
+.myinfo{
     padding:.6em;
 }
 
