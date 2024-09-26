@@ -77,3 +77,41 @@ line-height: 1.5em;
     font-size: 1.5em;
     line-height: 1.5em;
 } 
+
+/* Winnies card BELOW */
+
+
+.card2 {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: paleturquoise;
+    border: 0.2em dotted darkcyan;
+    border-radius: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+  }
+
+.card2 article img{
+    max-height: 100%; 
+    float: right;
+  }
+
+  .myinfo{
+    padding:.6em;
+}
+
+.card2 footer,.card2 header {
+    height: 3em; 
+    padding:1em;
+
+  } 
+
+.Warticle{
+    height:12em;
+    background-color:rgba(0,0,0,.2);
+    color: darkslateblue;
+    line-height: 1.5em;
+    padding-left:.7em;
+    
+} 
