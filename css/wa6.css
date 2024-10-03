@@ -1,0 +1,20 @@
+
+
+#img{
+    background-image: url('/img/tiger!.jpg');
+    padding: 100px;
+    margin-left: -100px;
+}
+
+
+#text{
+    position: absolute;
+    top: 5%;
+    left: 75%;
+    font-size: 30px;
+    color:black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: translate(-50%,-40%);
+  
+    }
+
