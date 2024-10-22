@@ -4,10 +4,10 @@
 
  #my_flexbox{
     display:flex;
-    /* flex-direction: column; */
-    justify-content:space-around ; /* refers to how things are horizontally, you can center, flex-start, flex-end, space-around, space-between*/
+    flex-direction: row-reverse; 
+    justify-content:space-between ; /* refers to how things are horizontally, you can center, flex-start, flex-end, space-around, space-between*/
     /* align-items: center, flex-start, flex-end, stretch, baseline */
-    align-items: center ;
+    align-items: auto ;
 }
 
  .info_card{
@@ -15,10 +15,7 @@
     min-width: 400px;
 }
 
-#info_1{
-    flex-grow: .4;
-    order:-2;
-}
+
 
 
 
@@ -27,8 +24,8 @@
 
 #my_grid{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr; /*fr units only in fexbox and grid  */ 
-    grid-template-rows: auto auto;
+    grid-template-columns: 3fr 3fr 3fr; /*fr units only in fexbox and grid  */ 
+    grid-template-rows: 3fr;
     /* space-evenly, space-around, space-between, center, start, end */
     /* align-content: center, space-evenly, space-around, space-between, start, end */
     

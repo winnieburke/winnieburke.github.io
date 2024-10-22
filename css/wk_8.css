@@ -1,0 +1,50 @@
+
+
+body{
+    margin: 0;
+
+}
+
+ul{
+    list-style: none; /*gets rid of bullets */
+    display: flex;
+    background-color: black;
+    margin: 0;
+    padding:10px 0px;
+    justify-content: flex-end;
+
+}
+
+li a:hover{
+    background-color: darkslategray;
+    color:yellow;
+    font-size: large;
+}
+
+li a{
+    text-decoration: none; /* gets rid of underlines*/
+    color: white;
+    padding: 10px 30px; /* first value: top/bottom, second value: */
+    transition: color 1s, font-size 1s;
+    font:400;
+
+}
+
+
+
+li a:active{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        background-color: limegreen;
+    }
+    ul{
+        flex-direction: column;}
+
+    li a{
+        width:100vw;
+    }
+}
