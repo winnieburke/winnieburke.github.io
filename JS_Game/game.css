@@ -1,19 +1,36 @@
-#container{
-    border:1px solid black;
-    height:90vh;
-    width:90vw;
+#container {
+    border: 1px solid black;
+    height: 90vh;
+    width: 90vw;
     margin: auto;
     position: relative;
-
 }
 
-#kitty{
-    width:10vw;
-    height:15vh;
-    /* will be character image  
-    background-image: url(""); */
-    /* placeholder block below */
-    background-color:pink;
-    position:absolute;
-    bottom:0;
+#kitty {
+    width: 15vw;
+    height: 10vh;
+    /* Placeholder block below */
+    background-color: pink;
+    position: absolute;
+    top: 75vh; /* Start near the bottom */
+    left: 40vw; /* Center horizontally */
+}
+
+#toy {
+    width: 3vw;
+    height: 6vh;
+    /* Placeholder block below */
+    background-color: red;
+    position: absolute;
+    top: 20vh; /* Example starting position */
+    left: 45vw; /* Example starting position */
+}
+
+.bunnies {
+    width: 5vw;
+    height: 8vh;
+    background-color: burlywood;
+    position: absolute;
+    top: 40vh; /* Example starting position */
+    left: 50vw; /* Example starting position */
 }
