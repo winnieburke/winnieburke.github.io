@@ -182,6 +182,7 @@ function spawnAdditionalBunny() {
 }
 
 // Function to move all dust bunnies
+// Something wrong here???? Bunnies moving werid :C 
 function moveDustBunnies() {
     bunnies.forEach(bunny => {
         let direction = 1; // 1 for right, -1 for left
