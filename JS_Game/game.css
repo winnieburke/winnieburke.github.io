@@ -5,6 +5,20 @@
     margin: auto;
     position: relative;
     overflow: hidden;
+    background-image: url("under the bed edited.png");
+    background-size: 90vw 80vh;
+    background-repeat: no-repeat;
+
+}
+
+body{
+    background-color: pink;
+}
+
+#intro{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:darkblue;
+    text-align: center;
 }
 
 

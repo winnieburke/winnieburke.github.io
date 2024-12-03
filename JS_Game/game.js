@@ -3,7 +3,7 @@
 //Need to do: Make dust bunnies move left to right at different times, seperate levels, seems to be an issue with container and bunnies
 //Weird overlap times with bunny and kitty
 //Make visuals, change kitty location when hits dust bunny to be off of bunny, spawn multipul bunnies, handle difficulties change per level
-
+//Need to add media queries 
 // Declaring kitty's position and movement variables
 let kitty = document.getElementById("kitty");
 let kittyPosition = kitty.getBoundingClientRect();
