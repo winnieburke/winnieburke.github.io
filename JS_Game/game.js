@@ -3,7 +3,9 @@
 //Need to do: Make dust bunnies move left to right at different times, seperate levels, seems to be an issue with container and bunnies
 //Weird overlap times with bunny and kitty
 //Make visuals, change kitty location when hits dust bunny to be off of bunny, spawn multipul bunnies, handle difficulties change per level
-//Need to add media queries 
+//Need to add media queries !
+
+
 // Declaring kitty's position and movement variables
 let kitty = document.getElementById("kitty");
 let kittyPosition = kitty.getBoundingClientRect();
@@ -16,7 +18,7 @@ let toy = document.getElementById("toy");
 let toyPosition = toy.getBoundingClientRect();
 
 // Speed and movement variables for the kitty
-let speed = 5;
+let speed = 7;
 
 // "Lives" for the game
 let lives = 3;
@@ -62,6 +64,7 @@ document.addEventListener("keydown", e => {
     if (isColliding(kittyPosition, toyPosition)) {
         console.log("You found the toy!");
         alert("You win this level!");
+        relocateToy();
         nextLevel();
     }
 });
@@ -139,8 +142,9 @@ function nextLevel() {
     spawnAdditionalBunny(); // Add more bunnies
 
     if (level > maxLevel) {
-        alert("Congratulations! You completed all levels!");
-        window.location.reload();
+        alert("Congratulations! You completed all levels! If you wish to play again press 'ok' if not please close this tab.");
+        
+        window.location.reload(); // May change this to something else or move to a
     } else {
         alert(`Level ${level} - Watch out for more dust bunnies!`);
     }
@@ -163,7 +167,7 @@ function initializeBunnies(numBunnies = 3) {
         container.appendChild(newBunny);
     }
 
-    // Update the `bunnies` NodeList to include the newly added bunnies
+    // Update the `bunnies` to include the newly added bunnies
     bunnies = document.querySelectorAll(".bunnies");
     moveDustBunnies(); // Start moving the dust bunnies
 }
@@ -181,13 +185,20 @@ function spawnAdditionalBunny() {
     moveDustBunnies();
 }
 
-// Function to move all dust bunnies
-// Something wrong here???? Bunnies moving werid :C 
+// Keep track of active intervals for each bunny
+let bunnyIntervals = new Map();
+
 function moveDustBunnies() {
+    // Clear existing intervals to avoid stacking
+    bunnyIntervals.forEach(intervalId => clearInterval(intervalId));
+    bunnyIntervals.clear();
+
     bunnies.forEach(bunny => {
         let direction = 1; // 1 for right, -1 for left
-        let speed = Math.random() * 3 + 1; // Random speed between 1 and 4
-        setInterval(() => {
+        let speed = Math.random() * 4+ 4; // Random speed 
+
+        // Create a movement interval for each bunny
+        const intervalId = setInterval(() => {
             const container = document.getElementById("container").getBoundingClientRect();
             const bunnyRect = bunny.getBoundingClientRect();
             let newLeft = bunny.offsetLeft + direction * speed;
@@ -200,14 +211,20 @@ function moveDustBunnies() {
 
             bunny.style.left = `${newLeft}px`; 
         }, 50);
+
+        // Store the interval ID for this bunny
+        bunnyIntervals.set(bunny, intervalId);
     });
 }
+
 
 
 // Initialize game elements and start bunny movement
 initializeBunnies(3); // Start with 3 bunnies
 relocateToy();
 moveDustBunnies();
-setInterval(relocateToy, 8000); // Relocate toy every 8 seconds
+setInterval(relocateToy, 3000); // Relocate toy every 3 seconds
+
+// Changed to increase general difficulty 
 
 

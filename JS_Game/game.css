@@ -1,5 +1,5 @@
 #container {
-    border: 1px solid black;
+    /* border: 3px dotted purple; */
     height: 80vh;
     width: 90vw;
     margin: auto;
@@ -23,21 +23,26 @@ body{
 
 
 #kitty {
-    width: 6vw;
+    width: 4vw;
     height: 6vh;
-    /* Placeholder block below */
-    background-color: pink;
+    /* Placeholder block below 70x50 */
+    background-image: url("catta.png");
     position: absolute;
+    background-repeat: no-repeat;
+
+    background-size: 4vw 6vh;
     top: 75vh; /* Start near the bottom */
     left: 40vw; /* Center horizontally */
 }
 
+
 #toy {
     width: 3vw;
     height: 3vh;
-    /* Placeholder block below */
-    background-color: red;
+    /* Placeholder block below  size 45x30*/
+    background-image:url("mouse.png");
     position: absolute;
+    background-repeat: no-repeat;
     top: 20vh; /* Example starting position */
     left: 45vw; /* Example starting position */
 }
@@ -49,4 +54,5 @@ body{
     position: absolute;
     top: 40vh; /* Example starting position */
     left: 50vw; /* Example starting position */
+    /* size 60x40 */
 }
