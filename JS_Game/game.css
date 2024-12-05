@@ -26,7 +26,7 @@ body{
     width: 4vw;
     height: 6vh;
     /* Placeholder block below 70x50 */
-    background-image: url("catta.png");
+    background-image: url("catsprite.png");
     position: absolute;
     background-repeat: no-repeat;
 
@@ -49,8 +49,9 @@ body{
 
 .bunnies {
     width: 5vw;
-    height: 5vh;
-    background-color: burlywood;
+    height: 6vh;
+    background-image:url("purplebunny.png");
+    background-repeat: no-repeat;
     position: absolute;
     top: 40vh; /* Example starting position */
     left: 50vw; /* Example starting position */

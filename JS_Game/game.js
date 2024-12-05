@@ -218,7 +218,7 @@ function moveDustBunnies() {
 
 
 // Initialize game elements and start bunny movement
-initializeBunnies(3); // Start with 3 bunnies
+initializeBunnies(4); // Start with 4 bunnies increased from 3 
 relocateToy();
 moveDustBunnies();
 setInterval(relocateToy, 3000); // Relocate toy every 3 seconds
