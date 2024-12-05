@@ -1,9 +1,7 @@
 //Game idea: Help the kitty find the lost toy under the bed while avoiding dust bunnies!
 
-//Need to do: Make dust bunnies move left to right at different times, seperate levels, seems to be an issue with container and bunnies
-//Weird overlap times with bunny and kitty
-//Make visuals, change kitty location when hits dust bunny to be off of bunny, spawn multipul bunnies, handle difficulties change per level
-//Need to add media queries !
+//Need to do: Seems to be an issue with container and bunnies
+//Since adding images for sprites the container is acting werid and will not let sprites go to the top of the container
 
 
 // Declaring kitty's position and movement variables
