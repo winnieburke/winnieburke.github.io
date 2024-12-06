@@ -1,20 +1,26 @@
 #container {
-    /* border: 3px dotted purple; */
+    border: 3px dotted purple;
     height: 80vh;
     width: 90vw;
     margin: auto;
     position: relative;
     overflow: hidden;
     background-image: url("under the bed edited.png");
-    background-size: 90vw 80vh;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 
 }
-
+* {
+    box-sizing: border-box;
+}
 body{
     background-color: pink;
 }
-
+#kitty, #toy, .bunnies {
+    position: absolute;
+    background-repeat: no-repeat;
+    border: 1px solid red; /* Debugging the container */
+}
 #intro{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:darkblue;
@@ -30,7 +36,7 @@ body{
     position: absolute;
     background-repeat: no-repeat;
 
-    background-size: 4vw 6vh;
+    background-size: cover;
     top: 75vh; /* Start near the bottom */
     left: 40vw; /* Center horizontally */
 }
@@ -42,6 +48,7 @@ body{
     /* Placeholder block below  size 45x30*/
     background-image:url("mouse.png");
     position: absolute;
+    background-size: cover;
     background-repeat: no-repeat;
     top: 20vh; /* Example starting position */
     left: 45vw; /* Example starting position */
@@ -53,6 +60,7 @@ body{
     background-image:url("purplebunny.png");
     background-repeat: no-repeat;
     position: absolute;
+    background-size: cover;
     top: 40vh; /* Example starting position */
     left: 50vw; /* Example starting position */
     /* size 60x40 */

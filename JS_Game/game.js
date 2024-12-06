@@ -25,6 +25,8 @@ let lives = 3;
 let level = 1;
 const maxLevel = 5;
 
+
+
 // Function to update the kitty's position based on key press
 document.addEventListener("keydown", e => {
     let newTop = kitty.offsetTop;
@@ -45,10 +47,10 @@ document.addEventListener("keydown", e => {
 
     // Keep the kitty within bounds
     const container = document.getElementById("container").getBoundingClientRect();
-    if (newTop >= container.top && newTop + kitty.offsetHeight <= container.bottom) {
+    if (newTop >= 0 && newTop + kitty.offsetHeight <= container.height) {
         kitty.style.top = `${newTop}px`;
     }
-    if (newLeft >= container.left && newLeft + kitty.offsetWidth <= container.right) {
+    if (newLeft >= 0 && newLeft + kitty.offsetWidth <= container.width) {
         kitty.style.left = `${newLeft}px`;
     }
 
