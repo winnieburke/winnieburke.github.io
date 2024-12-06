@@ -32,28 +32,29 @@ document.addEventListener("keydown", e => {
     let newTop = kitty.offsetTop;
     let newLeft = kitty.offsetLeft;
 
-    if (e.code === "ArrowUp") {
+    if (e.code === "ArrowUp") 
         newTop -= speed; // Move up
-    }
-    if (e.code === "ArrowDown") {
+    
+    if (e.code === "ArrowDown") 
         newTop += speed; // Move down
-    }
-    if (e.code === "ArrowLeft") {
+    
+    if (e.code === "ArrowLeft") 
         newLeft -= speed; // Move left
-    }
-    if (e.code === "ArrowRight") {
+    
+    if (e.code === "ArrowRight") 
         newLeft += speed; // Move right
-    }
+    
 
     // Keep the kitty within bounds
     const container = document.getElementById("container").getBoundingClientRect();
-    if (newTop >= 0 && newTop + kitty.offsetHeight <= container.height) {
+    const containerHeight = container.height; 
+    const containerWidth = container.width;
+    if (newTop >= 0 && newTop + kitty.offsetHeight <= containerHeight) {
         kitty.style.top = `${newTop}px`;
     }
-    if (newLeft >= 0 && newLeft + kitty.offsetWidth <= container.width) {
+    if (newLeft >= 0 && newLeft + kitty.offsetWidth <= containerWidth) {
         kitty.style.left = `${newLeft}px`;
     }
-
     // Update kitty's position
     kittyPosition = kitty.getBoundingClientRect();
 
