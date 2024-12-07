@@ -49,10 +49,10 @@ document.addEventListener("keydown", e => {
     const container = document.getElementById("container").getBoundingClientRect();
     const containerHeight = container.height; 
     const containerWidth = container.width;
-    if (newTop >= 0 && newTop + kitty.offsetHeight <= containerHeight) {
+    if (Math.round(newTop) >= 0 && Math.round(newTop + kitty.offsetHeight) <= Math.round(containerHeight)) {
         kitty.style.top = `${newTop}px`;
     }
-    if (newLeft >= 0 && newLeft + kitty.offsetWidth <= containerWidth) {
+    if (Math.round(newLeft) >= 0 && Math.round(newLeft + kitty.offsetWidth) <= Math.round(containerWidth)) {
         kitty.style.left = `${newLeft}px`;
     }
     // Update kitty's position
